@@ -3,16 +3,12 @@
 
 //global
 @import "global/fonts";
-
 @import "global/variables";
-
 @import "global/global";
-
 @import "global/utils";
 
 //blocks
 @import "blocks/container";
-@import "blocks/main";
 @import "blocks/title";
 @import "blocks/first-screen";
 @import "blocks/nav";
@@ -23,6 +19,7 @@
 @import "blocks/contacts";
 @import "blocks/footer";
 @import "blocks/catalog";
-@import "blocks/title-mini";
+@import "blocks/catalog-title";
 @import "blocks/video";
 @import "blocks/form";
+@import "blocks/copyright";
