@@ -1,0 +1,12 @@
+.title {
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  color: $title-color;
+
+  &--mini {
+    @media (max-width: 319px) {
+      font-size: 25px;
+    }
+  }
+}

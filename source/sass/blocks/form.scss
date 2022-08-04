@@ -1,0 +1,24 @@
+.form__section-name {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: $second-color;
+}
+
+.form__label {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: $title-color;
+}
+
+.form__input::placeholder {
+  font-family: "Open Sans", "Geneva", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.form__hint {
+  font-size: 14px;
+  line-height: 16px;
+}
