@@ -93,7 +93,7 @@ img {
   background-color: #f1f1f1;
 }
 .first-screen--home {
-  background-image: url(../img/hero-mobile@1x.jpg);
+  background-image: url("../img/hero-mobile@1x.jpg");
   background-position-y: -25px;
 }
 
@@ -256,13 +256,6 @@ img {
   background-color: #f1f1f1;
 }
 
-.copyright__text {
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 18px;
-  color: #000000;
-}
-
 .catalog__price {
   font-weight: 700;
   font-size: 15px;
@@ -274,7 +267,7 @@ img {
   text-decoration: none;
 }
 
-.title-mini {
+.catalog-title {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -308,5 +301,12 @@ img {
 .form__hint {
   font-size: 14px;
   line-height: 16px;
+}
+
+.copyright__text {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 18px;
+  color: #000000;
 }
 /*# sourceMappingURL=style.css.map */
