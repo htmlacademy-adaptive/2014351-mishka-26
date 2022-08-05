@@ -3,52 +3,76 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
-  <header class="header">
-    <nav class="header__nav nav">
+<header class="header">
+  <nav class="header__nav nav ">
+    <button class="nav__toggle">
+      <span class="visually-hidden">Открыть меню.</span>
+    </button>
+    <a class="nav__logo" href="index.html">
+      <picture>
+        <source media="(min-width: 1150px)" srcset="img/svg/mishka-logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/svg/mishka-logo-tablet.svg">
+        <img src="img/svg/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина Mishka">
+      </picture>
+    </a>
+    <div class="nav__list-container container">
       <ul class="nav__list nav__list--catalog list-reset">
         <li class="nav__item">
-          <a class="nav__link" href="catalog.html">Каталог товаров</a>
+          <a class="nav__link nav__link--current"  href="catalog.html">Каталог товаров</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link nav__link--current">Вязание на заказ</a>
+          <a class="nav__link">Вязание на заказ</a>
         </li>
       </ul>
-      <a class="nav__logo" href="index.html">
-        <img src="img/svg/mishka-logo-mobile.svg" alt="Логотип магазина Mishka" width="86" height="35">
-      </a>
       <ul class="nav__list nav__list--user list-reset">
         <li class="nav__item">
-          <a class="nav__link" href="#">Поиск по сайту</a>
+          <a class="nav__link nav__link--search" href="#">
+            <svg width="18" height="18" role="img" aria-label="Поиск." fill="currentColor">
+              <use xlink:href="img/sprite.svg#icon-search"></use>
+            </svg>
+            <span>Поиск по сайту</span>
+          </a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#">Корзина: пока пуста</a>
+          <a class="nav__link" href="#">
+            <svg width="21" height="18" role="img" aria-label="Корзина.">
+              <use xlink:href="img/sprite.svg#icon-cart"></use>
+            </svg>
+            <span>Корзина: пока пуста</span>
+          </a>
         </li>
       </ul>
-    </nav>
-    <section class="first-screen first-screen--form">
-      <h1 class="visually-hidden">Магазин вязаных изделий Mishka</h1>
-      <div class="first-screen__container container">
-        <ul class="first-screen__list specials-list list-reset">
-          <li class="specials-list__item">
-            <a class="specials-list__link" href="#">Новые поступления</a>
+    </div>
+    <div class="nav__sale-container">
+      <div class="nav__sale-wrapper">
+        <ul class="nav__list nav__list--sale list-reset">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Новые поступления</a>
           </li>
-          <li class="specials-list__item">
-            <a class="specials-list__link" href="#">Распродажа</a>
-          </li>
-          <li class="specials-list__item">
-            <span>Бесплатная доставка по России</span>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Распродажа</a>
           </li>
         </ul>
-        <h2 class="first-screen__title title">Вязание на заказ</h2>
+        <p class="nav__sale-text">Бесплатная доставка по России</p>
       </div>
-    </section>
-  </header>
+    </div>
+  </nav>
+  <section class="first-screen first-screen--catalog">
+    <h1 class="visually-hidden">Магазин вязаных изделий Mishka</h1>
+    <div class="first-screen__container container">
+      <h2 class="first-screen__title title">Вязание на заказ</h2>
+    </div>
+  </section>
+</header>
   <main class="main">
-    <section class="form">
+    <section class="form container">
       <h2 class="visually-hidden">Форма заявки на вязание</h2>
       <p class="form__desc">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form action="https://echo.htmlacademy.ru/" method="post">
@@ -145,7 +169,7 @@
           <div class="form__container container">
             <div class="form__input-wrapper">
               <h2 class="form__section-name">доп</h2>
-              <textarea name="comment" cols="100" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              <textarea class="form__input" name="comment" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
           </div>
         </fieldset>
@@ -182,8 +206,13 @@
 
       <div class="footer__copyright copyright">
         <span class="copyright__text">Разработано:</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML
-            Academy</span></a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
+        <a class="copyright__image" href="https://htmlacademy.ru/intensive/adaptive"><svg width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="#63D1BB"/>
+        </svg>
+        </a>
       </div>
     </div>
   </footer>

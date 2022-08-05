@@ -1,0 +1,28 @@
+.promo__wrapper {
+  // padding: 30px 31px;
+  //Что бы не перебивать паддинги от класса container, пишем свойства точечно
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.promo__type {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: $second-color;
+  text-transform: uppercase;
+}
+
+.promo__price {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.promo__button {
+  width: 100%;
+}
+
+.promo__image {
+  margin: 0;
+}

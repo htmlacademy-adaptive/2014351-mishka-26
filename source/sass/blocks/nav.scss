@@ -1,0 +1,23 @@
+.nav {
+  padding: 22px 31px;
+}
+
+.nav__list-container {
+  display: none;
+  padding: 0;
+}
+
+.nav__link {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-decoration: none;
+  color: $title-color;
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
+.nav__sale-container {
+  display: none;
+}
