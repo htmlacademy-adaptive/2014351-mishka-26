@@ -53,10 +53,10 @@
         <div class="nav__sale-wrapper">
           <ul class="nav__list nav__list--sale list-reset">
             <li class="nav__item">
-              <a class="nav__link" href="#">Новые поступления</a>
+              <a class="nav__link nav__link--mini" href="#">Новые поступления</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Распродажа</a>
+              <a class="nav__link nav__link--mini" href="#">Распродажа</a>
             </li>
           </ul>
           <p class="nav__sale-text">Бесплатная доставка по России</p>
@@ -138,7 +138,11 @@
       <div class="video__wrapper">
         <h2 class="visually-hidden">Видео</h2>
         <div class="video__player">
-          <img src="img/catalog/video.jpg" alt="Процесс производства." width="260" height="150">
+          <picture>
+            <source media="(min-width: 1150px)" width="682" height="455 " srcset="img/catalog/video-desktop@1x.jpg">
+            <source media="(min-width: 768px)" width="668" height="455" srcset="img/catalog/video-tablet@1x.jpg">
+            <img src="img/catalog/video-mobile@1x.jpg" alt="Процесс производства." width="260" height="150">
+          </picture>
           <a class="video__play" href="#">
             <span class="visually-hidden">play</span>
           </a>

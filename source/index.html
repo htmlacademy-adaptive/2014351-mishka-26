@@ -49,14 +49,14 @@
           </li>
         </ul>
       </div>
-      <div class="nav__sale-container">
+      <div class="nav__sale-container nav__sale-container--home">
         <div class="nav__sale-wrapper">
           <ul class="nav__list nav__list--sale list-reset">
             <li class="nav__item">
-              <a class="nav__link" href="#">Новые поступления</a>
+              <a class="nav__link nav__link--mini" href="#">Новые поступления</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Распродажа</a>
+              <a class="nav__link nav__link--mini" href="#">Распродажа</a>
             </li>
           </ul>
           <p class="nav__sale-text">Бесплатная доставка по России</p>
@@ -68,12 +68,12 @@
       <div class="first-screen__container container">
         <h2 class="first-screen__title title">Милые штуки ручной работы&nbsp;для&nbsp;дома</h2>
         <div class="first-screen__buttons">
-          <a class="first-screen__buttons-item first-screen__buttons-item--interior" href="#">Предметы интерьера
+          <a class="first-screen__buttons-item first-screen__buttons-item--interior" href="#">Предметы<br>интерьера
             <!-- <svg width="40" height="62" role="img" aria-label="Предметы интерьера.">
               <use xlink:href="img/sprite.svg#icon-interior"></use>
             </svg> -->
           </a>
-          <a class="first-screen__buttons-item first-screen__buttons-item--toys" href="#">Детские игрушки
+          <a class="first-screen__buttons-item first-screen__buttons-item--toys" href="#">Детские<br>игрушки
             <!-- <svg width="60" height="60" role="img" aria-label="Детские игрушки.">
               <use xlink:href="img/sprite.svg#icon-toys"></use>
             </svg> -->
@@ -104,9 +104,11 @@
           <p class="promo__price">Цена: 990 руб.</p>
           <button class="button promo__button" type="button">Заказать</button>
         </div>
-        <figure class="promo__image">
-          <img src="img/product-promo.jpg" alt="вязаные корзинки" width="260" height="315">
-        </figure>
+        <picture class="promo__image">
+          <source media="(min-width: 1150px)" width="525" height="636" srcset="img/product-promo-desktop@1x.jpg">
+          <source media="(min-width: 768px)" width="334" height="404" srcset="img/product-promo-tablet@1x.jpg">
+          <img src="img/product-promo-mobile@1x.jpg" width="260" height="315" alt="вязаные корзинки.">
+        </picture>
       </div>
     </section>
 
@@ -185,6 +187,7 @@
         <svg width="102" height="34" role="img" aria-label="Переход на главную страницу.">
           <use xlink:href="img/sprite.svg#logo-footer"></use>
         </svg>
+        логотип
       </a>
 
       <ul class="social list-reset">
@@ -194,6 +197,7 @@
               <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
             </svg>
             <span class="visually-hidden">Мы в контакте</span>
+            1
           </a>
         </li>
         <li class="social__item">
@@ -202,6 +206,7 @@
               <use xlink:href="img/sprite.svg#icon-youtube"></use>
             </svg>
             <span class="visually-hidden">Мы на YouTube</span>
+            2
           </a>
         </li>
         <li class="social__item">
@@ -210,6 +215,7 @@
               <use xlink:href="img/sprite.svg#icon-telegram"></use>
             </svg>
             <span class="visually-hidden">Мы в Телеграм</span>
+            3
           </a>
         </li>
       </ul>
