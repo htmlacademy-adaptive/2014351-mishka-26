@@ -1,7 +1,26 @@
 .reviews__wrapper {
-  // padding: 28px 30px 45px;
   padding-top: 28px;
   padding-bottom: 45px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 2fr 1fr 175px;
+    background-image: url("../img/review@1x.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.reviews__list {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
+}
+
+.reviews__desc {
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .reviews__name {
@@ -11,10 +30,30 @@
   color: $title-color;
 }
 
+.reviews__email {
+  font-size: 17px;
+  line-height: 30px;
+  color: $title-color;
+}
+
 .reviews__item {
   display: none;
 
   &--active {
     display: block;
+  }
+}
+
+.reviews__button {
+  @media (min-width: $tablet-width) {
+    grid-row: 1/2;
+    grid-column: 3/-1;
+  }
+}
+
+.reviews__control {
+  @media (min-width: $tablet-width) {
+    grid-column: 3/-1;
+    margin-top: -50px;
   }
 }

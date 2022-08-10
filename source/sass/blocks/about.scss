@@ -4,9 +4,21 @@
   padding-bottom: 31px;
 }
 
+.about__list {
+  @media (min-width: $tablet-width) {
+    column-count: 2;
+    column-gap: 0;
+  }
+}
+
 .about__item {
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
   color: $title-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }

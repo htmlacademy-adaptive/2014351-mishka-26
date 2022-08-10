@@ -3,8 +3,48 @@
   font-size: 15px;
   line-height: 24px;
   color: $title-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .catalog__link {
   text-decoration: none;
+}
+
+.catalog__list {
+  display: grid;
+
+  gap: 30px;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $tablet-width) {
+    gap: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 51px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.catalog__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    max-width: 316px;
+  }
+}
+
+.catalog__item-desc {
+  font-size: 13px;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+  }
 }

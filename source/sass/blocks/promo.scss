@@ -1,22 +1,70 @@
 .promo__wrapper {
-  // padding: 30px 31px;
-  //Что бы не перебивать паддинги от класса container, пишем свойства точечно
   padding-top: 30px;
   padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    min-height: 740px;
+    padding-left: 175px;
+  }
+}
+
+.promo__item {
+  line-height: 20px;
+}
+
+.promo__title-container {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    grid-row: 1/span 1;
+  }
 }
 
 .promo__type {
   font-weight: 700;
   font-size: 17px;
-  line-height: 20px;
+  line-height: 17px;
   color: $second-color;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 123px;
+    left: 82px;
+    max-width: 100px;
+  }
 }
+
+.promo__price-container {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+    grid-column: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+  }
+}
+
 
 .promo__price {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .promo__button {
@@ -25,4 +73,21 @@
 
 .promo__image {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-column: span 1/-1;
+    grid-row: 2 / span 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1 / span 3;
+    z-index: -1;
+  }
+}
+
+.promo__description p {
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
