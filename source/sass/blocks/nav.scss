@@ -35,9 +35,12 @@
 }
 
 .nav__list--user {
+  background-color: #ffffff;
+
   @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
-    grid-column: 2/-1;
+    grid-column: 1/-1;
     justify-content: end;
+    padding-left: 150px;
   }
 }
 
@@ -70,10 +73,6 @@
   @media (min-width: $tablet-width) {
     display: block;
     background-color: $footer-color;
-  }
-
-  &--home {
-    background-color: #f9f9f9;
   }
 }
 

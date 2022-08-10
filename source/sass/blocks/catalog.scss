@@ -14,8 +14,19 @@
 }
 
 .catalog__list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+
+  gap: 30px;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $tablet-width) {
+    gap: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 51px;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .catalog__item {

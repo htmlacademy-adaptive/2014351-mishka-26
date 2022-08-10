@@ -1,12 +1,12 @@
 .video__wrapper {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  border: 1px solid #ececec;
+  grid-template-columns: 1fr;
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 2fr;
-    column-gap: 26px;
+    gap: 17px 59px;
+    grid-template-columns: 683px 1fr;
+    grid-template-rows: auto 1fr;
   }
 }
 
@@ -17,13 +17,31 @@
   }
 }
 
+.video__image {
+  position: relative;
+
+  height: 150px;
+
+  @media (min-width: $tablet-width) {
+    height: 455px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 683px;
+    height: 453px;
+
+    grid-row: 1 / span 2;
+  }
+}
 
 .video__text {
   margin-left: 34px;
 
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+  }
+
   @media (min-width: $desktop-width) {
-    grid-column: 2/3;
-    grid-row: 2/3;
     margin: 0;
     padding-left: 53px;
   }
@@ -36,8 +54,10 @@
 }
 
 .video__title {
-  @media (max-width: $tablet-width - 1px) {
-    order: -1;
+  order: -1;
+
+  @media (min-width: $tablet-width) {
+    order: 0;
   }
 
   @media (min-width: $desktop-width) {
