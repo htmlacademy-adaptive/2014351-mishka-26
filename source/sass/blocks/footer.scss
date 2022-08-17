@@ -1,7 +1,10 @@
+.footer {
+  background-color: $footer-color;
+}
+
 .footer__wrapper {
   padding-top: 25px;
   padding-bottom: 31px;
-  background-color: $footer-color;
 
   @media (min-width: $tablet-width) {
     display: flex;

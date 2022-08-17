@@ -5,6 +5,11 @@
   @media (min-width: $tablet-width) {
     padding-top: 56px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 225px;
+    padding-bottom: 56px;
+  }
 }
 
 .about__list {

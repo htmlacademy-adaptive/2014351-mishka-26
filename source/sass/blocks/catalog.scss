@@ -1,3 +1,103 @@
+.catalog__list {
+  display: grid;
+
+  gap: 30px;
+  grid-template-columns: 1fr;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    gap: 54px;
+    padding-top: 67px;
+    padding-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 51px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.catalog__item {
+  max-width: 260px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    max-width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-rows: 462px 1fr;
+    grid-template-columns: none;
+  }
+}
+
+.catalog__item-desc {
+  font-size: 13px;
+  line-height: 30px;
+
+  margin: 0;
+  margin-top: 6px;
+  padding-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+  }
+}
+
+.catalog__image {
+  display: block;
+  width: 260px;
+  height: 195px;
+
+  @media (min-width: $tablet-width) {
+    width: 334px;
+    height: 334px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 462px;
+    width: 316px;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-position: center bottom;
+  }
+}
+
+.catalog__container {
+  padding: 27px 28px;
+  border: 1px solid #ececec;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 34px;
+  }
+}
+
+.catalog__link {
+  text-decoration: none;
+}
+
+.catalog__price-wrapper {
+  padding-top: 22px;
+  border-top: 1px solid #ececec;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 23px;
+  }
+}
+
 .catalog__price {
   font-weight: 700;
   font-size: 15px;
@@ -9,42 +109,9 @@
   }
 }
 
-.catalog__link {
-  text-decoration: none;
-}
-
-.catalog__list {
-  display: grid;
-
-  gap: 30px;
-  grid-template-columns: 1fr;
-
-  @media (min-width: $tablet-width) {
-    gap: 54px;
-  }
-
-  @media (min-width: $desktop-width) {
-    gap: 51px;
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.catalog__item {
-  @media (min-width: $tablet-width) {
-    display: flex;
-  }
-
-  @media (min-width: $desktop-width) {
-    flex-direction: column;
-    max-width: 316px;
-  }
-}
-
-.catalog__item-desc {
-  font-size: 13px;
-  line-height: 30px;
-
-  @media (min-width: $tablet-width) {
-    font-size: 15px;
-  }
+.catalog__cart-button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
