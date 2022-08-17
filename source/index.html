@@ -10,7 +10,7 @@
 
 <body>
   <header class="header header--home">
-    <nav class="header__nav nav ">
+    <nav class="header__nav nav nav--opened nav--nojs">
       <button class="nav__toggle">
         <span class="visually-hidden">Открыть меню.</span>
       </button>
@@ -27,7 +27,7 @@
             <a class="nav__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="form.html">Вязание на заказ</a>
+            <a class="nav__link nav__link--form" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
         <ul class="nav__list nav__list--user list-reset">
@@ -164,7 +164,7 @@
           <h2 class="contacts__title title title--mini">Контакты</h2>
           <dl class="contacts__list">
             <dt class="contacts__item">e-mail:</dt>
-            <dd class="contacts__item">
+            <dd class="contacts__item contacts__item--email">
               <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
             </dd>
             <dt class="contacts__item">адрес:</dt>
@@ -231,5 +231,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
+
 </html>

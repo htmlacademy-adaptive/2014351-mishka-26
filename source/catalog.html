@@ -10,7 +10,7 @@
 
 <body>
   <header class="header">
-    <nav class="header__nav nav ">
+    <nav class="header__nav nav nav--opened nav--nojs">
       <button class="nav__toggle">
         <span class="visually-hidden">Открыть меню.</span>
       </button>
@@ -27,7 +27,7 @@
             <a class="nav__link nav__link--current">Каталог товаров</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="form.html">Вязание на заказ</a>
+            <a class="nav__link nav__link--form" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
         <ul class="nav__list nav__list--user list-reset">
@@ -76,7 +76,8 @@
       <ul class="catalog__list list-reset">
         <li class="catalog__item">
           <a class="catalog__image" href="#">
-            <img src="img/catalog/photo-1-mobile.jpg" srcset="img/catalog/photo-1-mobile@2x.jpg 2x" width="260" height="195" alt="Зайчик-попрыгайчик.">
+            <img src="img/catalog/photo-1-mobile.jpg" srcset="img/catalog/photo-1-mobile@2x.jpg 2x" width="260"
+                 height="195" alt="Зайчик-попрыгайчик.">
           </a>
           <div class="catalog__container">
             <div class="catalog__descript">
@@ -96,7 +97,8 @@
         </li>
         <li class="catalog__item">
           <a class="catalog__image" href="#">
-            <img src="img/catalog/photo-2-mobile.jpg" srcset="img/catalog/photo-2-mobile@2x.jpg 2x" width="260" height="195" alt="Корзинка для белья.">
+            <img src="img/catalog/photo-2-mobile.jpg" srcset="img/catalog/photo-2-mobile@2x.jpg 2x" width="260"
+                 height="195" alt="Корзинка для белья.">
           </a>
           <div class="catalog__container">
             <div class="catalog__descript">
@@ -115,7 +117,8 @@
         </li>
         <li class="catalog__item">
           <a class="catalog__image" href="#">
-            <img src="img/catalog/photo-3-mobile.jpg" srcset="img/catalog/photo-3-mobile@2x.jpg 2x" width="260" height="195" alt="Большая корзинка для игрушек.">
+            <img src="img/catalog/photo-3-mobile.jpg" srcset="img/catalog/photo-3-mobile@2x.jpg 2x" width="260"
+                 height="195" alt="Большая корзинка для игрушек.">
           </a>
           <div class="catalog__container">
             <div class="catalog__descript">
@@ -138,18 +141,21 @@
       <div class="video__wrapper">
         <h2 class="visually-hidden">Видео</h2>
         <div class="video__player">
-          <picture class="video__image">
-            <source media="(min-width: 1150px)" width="682" height="455 " srcset="img/catalog/video-desktop@1x.jpg">
-            <source media="(min-width: 768px)" width="668" height="455" srcset="img/catalog/video-tablet@1x.jpg">
-            <img src="img/catalog/video-mobile@1x.jpg" alt="Процесс производства." width="260" height="150">
-          </picture>
+          <div class="video__image">
+            <picture>
+              <source media="(min-width: 1150px)" width="682" height="455 " srcset="img/catalog/video-desktop@1x.jpg">
+              <source media="(min-width: 768px)" width="668" height="455" srcset="img/catalog/video-tablet@1x.jpg">
+              <img src="img/catalog/video-mobile@1x.jpg" alt="Процесс производства." width="260" height="150">
+            </picture>
+          </div>
           <a class="video__play" href="#">
             <span class="visually-hidden">play</span>
           </a>
         </div>
         <h3 class="video__title catalog-title">Процесс производства</h3>
         <div class="video__text">
-          <p class="video__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <p class="video__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
+            появляются наши товары.</p>
           <button class="video__button button" type="button">Сделать заказ</button>
         </div>
       </div>
@@ -201,6 +207,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

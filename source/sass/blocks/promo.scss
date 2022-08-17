@@ -1,17 +1,22 @@
 .promo__wrapper {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 31px;
+  padding-bottom: 36px;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 42px;
+    padding-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
     min-height: 740px;
-    padding-left: 175px;
+    padding-left: 225px;
+    padding-top: 54px;
+    column-gap: 58px;
   }
 }
 
@@ -22,20 +27,34 @@
 .promo__title-container {
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    vertical-align: center;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: flex-start;
     grid-row: 1/span 1;
+    padding-top: 61px;
   }
 }
 
 .promo__type {
   font-weight: 700;
   font-size: 17px;
-  line-height: 17px;
+  line-height: 20px;
   color: $second-color;
   text-transform: uppercase;
+  margin-top: 3.5px;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    line-height: 17px;
+    max-width: 69px;
+    margin: auto 0;
+    margin-right: 28px;
+  }
 
   @media (min-width: $desktop-width) {
     position: absolute;
@@ -46,8 +65,12 @@
 }
 
 .promo__price-container {
+  order: 10;
+  margin-top: 26px;
+
   @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
     grid-column: 1/2;
+    margin-top: 57px;
   }
 
   @media (min-width: $desktop-width) {
@@ -60,6 +83,8 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+  text-align: center;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -69,25 +94,53 @@
 
 .promo__button {
   width: 100%;
+  margin-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 33px;
+  }
 }
 
 .promo__image {
   margin: 0;
+  margin-top: 28px;
 
   @media (min-width: $tablet-width) {
     grid-column: span 1/-1;
     grid-row: 2 / span 2;
+    margin-top: 50px;
   }
 
   @media (min-width: $desktop-width) {
     grid-row: 1 / span 3;
     z-index: -1;
+    margin-top: 0;
   }
 }
 
 .promo__description p {
+  margin: 0;
+  margin-top: 18px;
+
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
+    margin-top: 38px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 35px;
+  }
+}
+
+.promo__list {
+  margin-top: 41px;
+  display: grid;
+  grid-template-columns: 97px 1fr;
+}
+
+.promo__item {
+  margin: 0;
+  border-bottom: 1px solid #ececec;
+  padding: 7px 0 12px;
 }

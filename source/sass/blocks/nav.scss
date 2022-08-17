@@ -3,8 +3,14 @@
 }
 
 .nav__logo {
+  display: block;
+  height: 79px;
+  text-align: center;
+  padding-top: 22px;
+
   @media (min-width: $tablet-width) {
     position: absolute;
+    left: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -13,40 +19,136 @@
 }
 
 .nav__toggle {
+  position: absolute;
+  top: 18px;
+  right: 21px;
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.nav__list-container {
+.nav--closed .nav__toggle::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: $title-color;
+  position: absolute;
+  top: 13px;
+  left: 10px;
+  box-shadow: 0 6px 0 0 $title-color, 0 12px 0 0 $title-color;
+}
+
+.nav--opened .nav__toggle::before,
+.nav--opened .nav__toggle::after {
+  content: "";
+  width: 2px;
+  height: 27px;
+  background-color: $title-color;
+  position: absolute;
+  top: 6px;
+  left: 18px;
+}
+
+.nav--opened .nav__toggle::before {
+  transform: rotate(45deg);
+}
+
+.nav--opened .nav__toggle::after {
+  transform: rotate(-45deg);
+}
+
+
+.nav--closed .nav__list-container {
   display: none;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    gap: 20px 0;
     grid-template-columns: 1fr 1fr;
   }
 }
 
+.nav--nojs .nav__list-container {
+  position: static;
+}
+
 .nav__list--catalog {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    grid-column: 1/-1;
+    padding-left: 50px;
+  }
+
   @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
     order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-left: 15px;
   }
 }
 
 .nav__list--user {
   background-color: #ffffff;
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+    border-bottom: 1px solid #ececec;
+  }
+
   @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
     grid-column: 1/-1;
     justify-content: end;
     padding-left: 150px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/-1;
+    grid-row: 1/2;
+    justify-content: flex-end;
+    border-bottom: none;
+  }
+
+  .nav__item {
+    border-left: 1px solid #ececec;
   }
 }
 
 .nav__list--sale {
   @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
     display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 45px;
+  }
+}
+
+.nav__list--sale .nav__link--mini {
+  @media (min-width: $desktop-width) {
+    padding: 20px 0 20px;
+  }
+}
+
+.nav__list-container {
+  padding: 0;
+  position: absolute;
+  background-color: $background-color;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -56,14 +158,63 @@
   line-height: 24px;
   text-decoration: none;
   color: $title-color;
-  text-align: center;
+  text-align: left;
   width: 100%;
   display: block;
+  padding-top: 28px;
+  padding-bottom: 27px;
+  padding-left: 76px;
+  border-top: 1px solid #ececec;
+  position: relative;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+  }
 
   &--mini {
     @media (min-width: $desktop-width) {
       font-size: 15px;
     }
+  }
+
+  svg {
+    position: absolute;
+  }
+}
+
+.nav__link--form {
+  @media (min-width: $desktop-width) {
+    border-left: 1px solid #ececec;
+  }
+}
+
+.nav__link--search span {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.nav__list--user .nav__link {
+  @media (min-width: $tablet-width) {
+    padding: 32px 50px 32px 81px;
+  }
+}
+
+.nav__list--catalog .nav__link {
+  @media (min-width: $tablet-width) {
+    padding: 21px 37px 0 0;
+    font-size: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 32px 35px;
+  }
+}
+
+.nav__list--user .nav__link--search {
+  @media (min-width: $tablet-width) {
+    padding: 36px 41px 34px;
   }
 }
 
@@ -73,22 +224,35 @@
   @media (min-width: $tablet-width) {
     display: block;
     background-color: $footer-color;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-top: 1px solid #ececec;
+    padding: 0;
   }
 }
 
 .nav__sale-wrapper {
   @media (min-width: $tablet-width) {
-    margin: -50px 0 0 auto;
+    margin: -45px 0 0 auto;
     display: flex;
     justify-content: flex-end;
     max-width: 1150px;
-    padding: 18px 51px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
     width: 100%;
-    padding: 18px 51px;
     justify-content: space-between;
+    max-width: 1150px;
+    padding: 0 50px;
+  }
+}
+
+.nav__sale-text {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding-top: 21px;
   }
 }

@@ -1,11 +1,13 @@
 .footer__wrapper {
   padding-top: 25px;
-  padding-bottom: 29px;
+  padding-bottom: 31px;
   background-color: $footer-color;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    padding-top: 51px;
+    padding-bottom: 58px;
   }
 }
 
@@ -14,5 +16,17 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+  }
+}
+
+.footer__copyright {
+  padding-top: 22px;
+  margin-top: 28px;
+  border-top: 1px solid #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin-top: 0;
+    padding-top: 0;
   }
 }

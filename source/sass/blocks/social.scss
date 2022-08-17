@@ -1,0 +1,17 @@
+.social {
+  display: flex;
+  padding: 0 59px;
+  justify-content: space-between;
+  max-width: 300px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0;
+    min-width: 142px;
+  }
+}
+
+.social__item {
+  width: 28px;
+}
