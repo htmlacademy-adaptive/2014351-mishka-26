@@ -23,8 +23,11 @@
 .first-screen__title {
   margin: 0 auto;
   text-align: center;
-  padding-top: 56px;
-  padding-bottom: 75px;
+  padding: 74px 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 57px;
+  }
 
   &--home {
     max-width: 300px;
