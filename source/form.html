@@ -11,9 +11,9 @@
 
 </head>
 
-<body>
+<body class="nojs">
   <header class="header">
-    <nav class="header__nav nav ">
+    <nav class="header__nav nav nav--opened">
       <button class="nav__toggle">
         <span class="visually-hidden">Открыть меню.</span>
       </button>
@@ -107,7 +107,7 @@
             <h2 class="form__section-name form__section-name--lines">
               <span>Цвет</span>
             </h2>
-            <div class="form__input-wrapper">
+            <div class="form__input-wrapper form__input-wrapper--check">
               <label class="form__label form__label--check">
                 <input class="visually-hidden form__input-control form__input--checkbox" type="checkbox" name="white" checked>
                 <span class="form__label-control form__label-control--check"></span>
@@ -190,7 +190,7 @@
             <h2 class="form__section-name form__section-name--lines">
               <span>Доп</span>
             </h2>
-            <textarea class="form__input form__input--textarea" name="comment" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <textarea class="form__input form__input--textarea" name="comment" rows="7" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
         </fieldset>
         <div class="form__section form__section--submit">
@@ -248,6 +248,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

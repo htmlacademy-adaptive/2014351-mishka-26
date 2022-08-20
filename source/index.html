@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="nojs">
   <header class="header header--home">
-    <nav class="header__nav nav ">
+    <nav class="header__nav nav nav--opened">
       <button class="nav__toggle">
         <span class="visually-hidden">Открыть меню.</span>
       </button>
@@ -27,7 +27,7 @@
             <a class="nav__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="form.html">Вязание на заказ</a>
+            <a class="nav__link nav__link--form" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
         <ul class="nav__list nav__list--user list-reset">
@@ -66,7 +66,7 @@
     <section class="first-screen first-screen--home">
       <h1 class="visually-hidden">Магазин вязаных изделий Mishka</h1>
       <div class="first-screen__container container">
-        <h2 class="first-screen__title title">Милые штуки ручной работы&nbsp;для&nbsp;дома</h2>
+        <h2 class="first-screen__title first-screen__title--home title">Милые штуки ручной работы&nbsp;для&nbsp;дома</h2>
         <div class="first-screen__buttons">
           <a class="first-screen__buttons-item first-screen__buttons-item--interior" href="#">Предметы<br>интерьера
             <!-- <svg width="40" height="62" role="img" aria-label="Предметы интерьера.">
@@ -104,11 +104,14 @@
           <p class="promo__price">Цена: 990 руб.</p>
           <button class="button promo__button" type="button">Заказать</button>
         </div>
-        <picture class="promo__image">
-          <source media="(min-width: 1150px)" width="525" height="636" srcset="img/product-promo-desktop@1x.jpg">
-          <source media="(min-width: 768px)" width="334" height="404" srcset="img/product-promo-tablet@1x.jpg">
-          <img src="img/product-promo-mobile@1x.jpg" width="260" height="315" alt="вязаные корзинки.">
-        </picture>
+        <div class="promo__image">
+          <picture>
+            <source media="(min-width: 1150px)" width="525" height="636" srcset="img/product-promo-desktop@1x.jpg">
+            <source media="(min-width: 768px)" width="334" height="404" srcset="img/product-promo-tablet@1x.jpg">
+            <img src="img/product-promo-mobile@1x.jpg" width="260" height="315" alt="вязаные корзинки.">
+          </picture>
+        </div>
+
       </div>
     </section>
 
@@ -164,7 +167,7 @@
           <h2 class="contacts__title title title--mini">Контакты</h2>
           <dl class="contacts__list">
             <dt class="contacts__item">e-mail:</dt>
-            <dd class="contacts__item">
+            <dd class="contacts__item contacts__item--email">
               <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
             </dd>
             <dt class="contacts__item">адрес:</dt>
@@ -173,7 +176,9 @@
         </div>
         <a class="contacts__button button" href="#">Напишите нам</a>
         <div class="contacts__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002699!2d30.320858715530907!3d59.93871916905485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1659355165573!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="contacts__iframe">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002699!2d30.320858715530907!3d59.93871916905485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1659355165573!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
           <figure class="contacts__map-image">
             <img src="img/map-mobile@1x.png" alt="Карта с адресом" width="320" height="454">
           </figure>
@@ -231,5 +236,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
+
 </html>

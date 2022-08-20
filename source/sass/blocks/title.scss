@@ -16,7 +16,7 @@
   }
 
   &--mini {
-    @media (max-width: 319px) {
+    @media (max-width: $tablet-width - 1px) {
       font-size: 25px;
     }
   }
