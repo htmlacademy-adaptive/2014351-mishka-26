@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -106,9 +110,9 @@
         </div>
         <div class="promo__image">
           <picture>
-            <source media="(min-width: 1150px)" width="525" height="636" srcset="img/product-promo-desktop@1x.jpg">
-            <source media="(min-width: 768px)" width="334" height="404" srcset="img/product-promo-tablet@1x.jpg">
-            <img src="img/product-promo-mobile@1x.jpg" width="260" height="315" alt="вязаные корзинки.">
+            <source media="(min-width: 1150px)" srcset="img/product-promo-desktop@1x.jpg 1x, img/product-promo-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/product-promo-tablet@1x.jpg 1x, img/product-promo-tablet@2x.jpg 2x">
+            <img src="img/product-promo-mobile@1x.jpg" srcset="img/product-promo-mobile@1x.jpg 1x, img/product-promo-mobile@2x.jpg 2x" width="260" height="315" alt="вязаные корзинки.">
           </picture>
         </div>
 

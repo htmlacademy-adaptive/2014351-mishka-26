@@ -8,14 +8,29 @@
     background-position-y: -24px;
     background-color: #f9f9f9;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-mobile@2x.jpg");
+      background-size: 320px auto;
+    }
+
     @media (min-width: $tablet-width) {
       background-image: url("../img/hero-tablet@1x.jpg");
       background-position-y: -47px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/hero-tablet@2x.jpg");
+        background-size: 768px auto;
+      }
     }
 
     @media (min-width: $desktop-width) {
       background-image: url("../img/hero-desktop@1x.jpg");
       background-position-y: 25px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/hero-desktop@2x.jpg");
+        background-size: 1150px auto;
+      }
     }
   }
 }
