@@ -26,7 +26,7 @@
 
 .video__image {
   position: relative;
-
+  width: 100%;
   height: 150px;
 
   @media (min-width: $tablet-width) {
@@ -38,6 +38,11 @@
     height: 453px;
 
     grid-row: 1 / span 2;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
   }
 }
 

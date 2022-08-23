@@ -101,6 +101,18 @@
   }
 }
 
+.reviews__control-arrow::before {
+  content: url("../../img/svg/arrow.svg");
+  width: 50px;
+  height: 26px;
+  display: block;
+  margin: 0 auto;
+}
+
+.reviews__control-arrow--next::before {
+  transform: rotate(180deg);
+}
+
 .reviews__button {
   margin-top: 38px;
 
