@@ -5,6 +5,7 @@
 .footer__wrapper {
   padding-top: 25px;
   padding-bottom: 31px;
+  margin-top: auto;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -16,6 +17,7 @@
 
 .footer__logo {
   display: none;
+  height: 34px;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -26,10 +28,21 @@
   padding-top: 22px;
   margin-top: 28px;
   border-top: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
     border: none;
     margin-top: 0;
     padding-top: 0;
   }
+}
+
+.copyright__text {
+  margin-right: 26px;
+}
+
+.copyright__link {
+  height: 34px;
 }

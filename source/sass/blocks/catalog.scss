@@ -73,7 +73,7 @@
 
 .catalog__container {
   padding: 27px 28px;
-  border: 1px solid #ececec;
+  border: $border-classic;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -89,7 +89,7 @@
 
 .catalog__price-wrapper {
   padding-top: 22px;
-  border-top: 1px solid #ececec;
+  border-top: $border-classic;
   display: flex;
   justify-content: space-between;
 

@@ -1,14 +1,18 @@
 .promo__wrapper {
   padding-top: 31px;
-  padding-bottom: 36px;
+  padding-bottom: 42px;
   display: flex;
   flex-direction: column;
+  background-image: url("../img/svg/zigzag-line-mobile.svg");
+  background-repeat: repeat-x;
+  background-position: bottom;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 42px;
-    padding-bottom: 52px;
+    padding-bottom: 69px;
+    background-image: url("../img/svg/zigzag-line-tablet.svg");
   }
 
   @media (min-width: $desktop-width) {
@@ -17,14 +21,17 @@
     min-height: 740px;
     padding-left: 225px;
     padding-top: 54px;
+    padding-bottom: 96px;
     column-gap: 58px;
+    background-image: url("../img/svg/zigzag-line-desktop.svg");
+    background-repeat: no-repeat;
   }
 }
 
 .promo__item {
   line-height: 20px;
   margin: 0;
-  border-bottom: 1px solid #ececec;
+  border-bottom: $border-classic;
   padding: 7px 0 12px;
 }
 

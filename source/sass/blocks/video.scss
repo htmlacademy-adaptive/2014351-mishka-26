@@ -48,7 +48,7 @@
 
 .video__text {
   padding: 35px 32px 33px;
-  border: 1px solid #ececec;
+  border: $border-classic;
 
   @media (min-width: $tablet-width) {
     border-top: none;
@@ -77,7 +77,7 @@
   background-image: url("../img/svg/video.svg");
   background-repeat: no-repeat;
   background-position: top 35px left 34px;
-  border: 1px solid #ececec;
+  border: $border-classic;
 
   @media (min-width: $tablet-width) {
     order: 0;

@@ -8,6 +8,10 @@
     flex-direction: column;
     padding-top: 22px;
     padding-bottom: 57px;
+    margin-top: 46px;
+    background-image: url("../img/svg/flag.svg");
+    background-repeat: no-repeat;
+    background-position: top right 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -15,6 +19,7 @@
     grid-template-columns: 1fr 1fr;
     padding: 71px 50px 105px 225px;
     margin: 0 auto;
+    background-position: top 132px left 113px;
   }
 }
 
@@ -105,7 +110,7 @@
   order: 1;
 
   @media (min-width: $tablet-width) {
-    max-width: 230px;
+    width: 230px;
     margin: 55px auto 0;
   }
 
@@ -121,4 +126,16 @@
 
 .nojs .contacts__map-image {
   display: block;
+  margin: 0;
+  width: 100%;
+  position: relative;
+
+  &::before {
+    content: url("../../img/map-marker.png");
+    position: absolute;
+    top: 145px;
+    left: 138px;
+    width: 67px;
+    height: 100px;
+  }
 }
