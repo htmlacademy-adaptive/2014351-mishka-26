@@ -38,15 +38,15 @@
           <li class="nav__item">
             <a class="nav__link nav__link--search" href="#">
               <svg width="18" height="18" role="img" aria-label="Поиск." fill="currentColor">
-                <use xlink:href="img/sprite.svg#icon-search"></use>
+                <use xlink:href="img/sprite.svg#search-icon"></use>
               </svg>
               <span>Поиск по сайту</span>
             </a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">
+            <a class="nav__link nav__link--cart" href="#">
               <svg width="21" height="18" role="img" aria-label="Корзина.">
-                <use xlink:href="img/sprite.svg#icon-cart"></use>
+                <use xlink:href="img/sprite.svg#cart-icon"></use>
               </svg>
               <span>Корзина: пока пуста</span>
             </a>
@@ -110,12 +110,15 @@
         </div>
         <div class="promo__image">
           <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/product-promo-desktop@1x.webp 1x, img/product-promo-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/product-promo-tablet@1x.webp 1x, img/product-promo-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/product-promo-mobile@1x.webp 1x, img/product-promo-mobile@2x.webp 2x">
+
             <source media="(min-width: 1150px)" srcset="img/product-promo-desktop@1x.jpg 1x, img/product-promo-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/product-promo-tablet@1x.jpg 1x, img/product-promo-tablet@2x.jpg 2x">
             <img src="img/product-promo-mobile@1x.jpg" srcset="img/product-promo-mobile@1x.jpg 1x, img/product-promo-mobile@2x.jpg 2x" width="260" height="315" alt="вязаные корзинки.">
           </picture>
         </div>
-
       </div>
     </section>
 
@@ -196,35 +199,31 @@
         <svg width="102" height="34" role="img" aria-label="Переход на главную страницу.">
           <use xlink:href="img/sprite.svg#logo-footer"></use>
         </svg>
-        логотип
       </a>
 
       <ul class="social list-reset">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
             <svg width="28" height="22" role="img" aria-label="Мы в контакте.">
-              <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
+              <use xlink:href="img/sprite.svg#vkontakte"></use>
             </svg>
             <span class="visually-hidden">Мы в контакте</span>
-            1
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
             <svg width="28" height="22" role="img" aria-label="Мы на YouTube.">
-              <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              <use xlink:href="img/sprite.svg#youtube"></use>
             </svg>
             <span class="visually-hidden">Мы на YouTube</span>
-            2
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
             <svg width="28" height="22" role="img" aria-label="Мы в Телеграм.">
-              <use xlink:href="img/sprite.svg#icon-telegram"></use>
+              <use xlink:href="img/sprite.svg#telegram"></use>
             </svg>
             <span class="visually-hidden">Мы в Телеграм</span>
-            3
           </a>
         </li>
       </ul>
@@ -233,7 +232,7 @@
         <span class="copyright__text">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg width="27" height="34" role="img" aria-label="Логотип HTML Academy.">
-            <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+            <use xlink:href="img/sprite.svg#htmlacademy-footer"></use>
           </svg>
           <span class="visually-hidden">Html Academy</span>
         </a>

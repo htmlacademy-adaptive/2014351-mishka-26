@@ -1,6 +1,22 @@
+.reviews {
+  background-image: url("../img/svg/zigzag-line-mobile.svg");
+  background-repeat: repeat-x;
+  background-position: bottom;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/svg/zigzag-line-tablet.svg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/svg/zigzag-line-desktop.svg");
+    background-repeat: no-repeat;
+    padding-bottom: 90px;
+  }
+}
+
 .reviews__wrapper {
   padding-top: 28px;
-  padding-bottom: 45px;
+  padding-bottom: 51px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -8,8 +24,7 @@
     background-image: url("../img/review@1x.png");
     background-repeat: no-repeat;
     padding-top: 83px;
-    padding-bottom: 47px;
-    margin-bottom: 131px;
+    padding-bottom: 132px;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,7 +32,6 @@
     padding-left: 225px;
     background-position: 50px;
     padding-bottom: 96px;
-    margin-bottom: 67px;
   }
 }
 
@@ -83,7 +97,7 @@
 
   &-arrow {
     background-color: transparent;
-    border: 1px solid #ececec;
+    border: $border-classic;
     cursor: pointer;
 
     @media (min-width: $tablet-width) {
@@ -102,7 +116,7 @@
 }
 
 .reviews__control-arrow::before {
-  content: url("../../img/svg/arrow.svg");
+  content: url("../img/svg/arrow.svg");
   width: 50px;
   height: 26px;
   display: block;
