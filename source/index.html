@@ -73,14 +73,14 @@
         <h2 class="first-screen__title first-screen__title--home title">Милые штуки ручной работы&nbsp;для&nbsp;дома</h2>
         <div class="first-screen__buttons">
           <a class="first-screen__buttons-item first-screen__buttons-item--interior" href="#">Предметы<br>интерьера
-            <!-- <svg width="40" height="62" role="img" aria-label="Предметы интерьера.">
+            <svg width="40" height="62" role="img" aria-label="Предметы интерьера.">
               <use xlink:href="img/sprite.svg#icon-interior"></use>
-            </svg> -->
+            </svg>
           </a>
           <a class="first-screen__buttons-item first-screen__buttons-item--toys" href="#">Детские<br>игрушки
-            <!-- <svg width="60" height="60" role="img" aria-label="Детские игрушки.">
+            <svg width="60" height="60" role="img" aria-label="Детские игрушки.">
               <use xlink:href="img/sprite.svg#icon-toys"></use>
-            </svg> -->
+            </svg>
           </a>
         </div>
       </div>
@@ -159,9 +159,15 @@
         <div class="reviews__control">
           <button class="reviews__control-arrow reviews__control-arrow--prev" type="button">
             <span class="visually-hidden">Назад</span>
+            <svg width="50" height="26" role="img" aria-label="Назад" fill="currentColor">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
           </button>
           <button class="reviews__control-arrow reviews__control-arrow--next" type="button">
             <span class="visually-hidden">Вперед</span>
+            <svg width="50" height="26" role="img" aria-label="Вперед">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
           </button>
         </div>
         <a class="reviews__button button" href="#">Написать</a>
@@ -239,6 +245,25 @@
       </div>
     </div>
   </footer>
+  <div class="modal-container">
+    <section class="modal">
+      <h2 class="title modal__title">Добавить в&nbsp;корзину</h2>
+      <p class="modal__text">Выберите размер:</p>
+      <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+        <input class="visually-hidden" type="radio" name="size" value="S" id="input-s" checked>
+        <label class="modal__radio" for="input-s">s</label>
+
+        <input class="visually-hidden" type="radio" name="size" value="M" id="input-m" checked>
+        <label class="modal__radio" for="input-m">m</label>
+
+        <input class="visually-hidden" type="radio" name="size" value="L" id="input-l" checked>
+        <label class="modal__radio" for="input-l">l</label>
+
+        <button class="button modal__button" type="submit">Добавить</button>
+      </form>
+
+    </section>
+  </div>
   <script src="js/script.js"></script>
 </body>
 

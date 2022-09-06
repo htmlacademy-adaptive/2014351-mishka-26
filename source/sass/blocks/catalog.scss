@@ -35,6 +35,14 @@
   }
 }
 
+.catalog__item:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.catalog__item:active {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
 .catalog__item-desc {
   font-size: 13px;
   line-height: 30px;
@@ -114,4 +122,18 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+
+  svg {
+    fill: $title-color;
+    opacity: 0.2;
+  }
+
+  &:hover svg {
+    fill: $second-color;
+    opacity: 1;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
 }

@@ -16,3 +16,15 @@
     height: 22px;
   }
 }
+
+.social__link svg {
+  fill: #231f20;
+}
+
+.social__link:hover svg {
+  fill: #46c1ae;
+}
+
+.social__link:active svg {
+  opacity: 0.3;
+}

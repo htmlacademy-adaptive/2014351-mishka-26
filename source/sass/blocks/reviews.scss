@@ -23,7 +23,7 @@
     grid-template-columns: 2fr 1fr 175px;
     background-image: url("../img/review@1x.png");
     background-repeat: no-repeat;
-    padding-top: 83px;
+    padding-top: 79px;
     padding-bottom: 132px;
   }
 
@@ -99,6 +99,9 @@
     background-color: transparent;
     border: $border-classic;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @media (min-width: $tablet-width) {
       border: none;
@@ -115,24 +118,30 @@
   }
 }
 
-.reviews__control-arrow::before {
-  content: url("../img/svg/arrow.svg");
-  width: 50px;
-  height: 26px;
-  display: block;
-  margin: 0 auto;
+.reviews__control-arrow--next {
+  transform: rotate(180deg);
 }
 
-.reviews__control-arrow--next::before {
-  transform: rotate(180deg);
+.reviews__control-arrow:hover {
+  opacity: 0.6;
+}
+
+.reviews__control-arrow:active {
+  opacity: 0.3;
 }
 
 .reviews__button {
   margin-top: 38px;
+  padding: 14px 40px 14px 35px;
 
   @media (min-width: $tablet-width) {
     grid-row: 1/2;
     grid-column: 3/-1;
     margin-top: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    margin-top: 4px;
   }
 }
