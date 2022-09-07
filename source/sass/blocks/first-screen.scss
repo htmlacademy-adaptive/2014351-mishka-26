@@ -129,6 +129,11 @@
       padding: 31px 35px 44px 36px;
     }
   }
+
+  svg {
+    opacity: 0.5;
+    fill: #149080;
+  }
 }
 
 .first-screen__buttons-item:hover {
