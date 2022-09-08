@@ -15,9 +15,19 @@
     grid-template-rows: auto 1fr;
     max-width: none;
   }
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .video__player {
+  position: relative;
+
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
     grid-row: 1/-1;
@@ -35,7 +45,6 @@
 
   @media (min-width: $desktop-width) {
     width: 683px;
-    height: 453px;
 
     grid-row: 1 / span 2;
   }
@@ -101,4 +110,22 @@
   @media (min-width: $desktop-width) {
     margin-top: 49px;
   }
+}
+
+.video__play svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.video__play:hover svg {
+  transform: scale(1.2);
+}
+
+.video__play:active svg {
+  transform: scale(0.8);
+  opacity: 0.7;
 }

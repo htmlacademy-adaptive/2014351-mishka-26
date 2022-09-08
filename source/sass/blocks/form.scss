@@ -49,8 +49,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    //padding-left: 97px;
-    //padding-right: 200px;
     max-width: 853px;
     margin: 0 auto;
   }
@@ -128,6 +126,14 @@
   position: relative;
   border: 2px solid $base-color;
 
+  &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:active {
+    border-color: #c7c7c7;
+  }
+
   &--radio {
     width: 42px;
     height: 42px;
@@ -138,6 +144,56 @@
   &--check {
     width: 38px;
     height: 38px;
+  }
+}
+
+.form__label-contacts {
+  position: relative;
+  margin-top: 4.5px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+
+  &--tel svg {
+    position: absolute;
+    right: 7px;
+    top: 11px;
+    opacity: 0.2;
+
+    @media (min-width: $tablet-width) {
+      right: 26px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 8px;
+    }
+  }
+
+  &--mail svg {
+    position: absolute;
+    right: 3px;
+    top: 16px;
+    opacity: 0.2;
+
+    @media (min-width: $tablet-width) {
+      right: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 4px;
+    }
+  }
+
+  &:hover {
+    svg {
+      fill: #62d1ba;
+      opacity: 1;
+    }
+
+    input {
+      border-color: #62d1ba;
+    }
   }
 }
 
@@ -191,15 +247,24 @@
   border-bottom: 2px solid $base-color;
   width: 100%;
   padding: 17px 0;
+  font-size: 19px;
+  line-height: 18px;
+  color: $base-color;
+  font-family: "Open Sans", "Geneva", sans-serif;
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
+    padding: 17px;
   }
 
   &--textarea {
     border: 2px solid $base-color;
     margin-top: 23px;
     padding: 17px;
+
+    &:hover {
+      border-color: #62d1ba;
+    }
 
     @media (min-width: $tablet-width) {
       min-width: 501px;
@@ -210,6 +275,30 @@
       min-width: 700px;
     }
   }
+
+  &--tel {
+    padding: 14px 0 20px;
+
+    @media (min-width: $tablet-width) {
+      padding: 14px 17px 20px;
+    }
+  }
+
+  &--email {
+    padding: 16px 0 19px;
+
+    @media (min-width: $tablet-width) {
+      padding: 16px 17px 19px;
+    }
+  }
+}
+
+.form__input:hover {
+  border-color: #62d1ba;
+}
+
+.form__input:focus-visible {
+  outline: none;
 }
 
 .form__input-group {

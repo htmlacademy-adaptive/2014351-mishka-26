@@ -88,7 +88,6 @@
 
 .first-screen__buttons-item {
   box-sizing: border-box;
-  padding: 24px 36px 31px 30px;
 
   font-weight: 700;
   font-size: 19px;
@@ -96,38 +95,62 @@
   color: $another-title-color;
   text-decoration: none;
 
+  display: flex;
+  justify-content: space-between;
+
   @media (min-width: $tablet-width) {
     flex: 1;
     font-size: 20px;
     line-height: 30px;
-    padding: 25px 36px 46px 36px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 25px 36px 51px 36px;
   }
 
   &--interior {
     background-color: $second-color;
-    display: flex;
-    background-image: url("../../img/svg/interior-button.svg");
-    background-repeat: no-repeat;
-    background-position: right 36px center;
+    padding: 23px 36px 18px 30px;
 
     @media (min-width: $tablet-width) {
-      background-position: right 36px top 30px;
+      padding: 30px 36px 39px 36px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 30px 36px 44px 37px;
     }
   }
 
   &--toys {
     background-color: $second-darkest-color;
-    display: flex;
-    background-image: url("../../img/svg/toys-button.svg");
-    background-repeat: no-repeat;
-    background-position: right 27px center;
+    padding: 21px 27px 22px 30px;
 
     @media (min-width: $tablet-width) {
-      background-position: right 33px top 31px;
+      padding: 31px 33px 39px 36px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding: 31px 35px 44px 36px;
+    }
+  }
+
+  svg {
+    opacity: 0.5;
+    fill: #149080;
+  }
+}
+
+.first-screen__buttons-item:hover {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: -5px;
+  }
+}
+
+.first-screen__buttons-item:active {
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
+}
+
+.first-screen__buttons-item:active svg {
+  @media (min-width: $tablet-width) {
+    opacity: 0.3;
   }
 }

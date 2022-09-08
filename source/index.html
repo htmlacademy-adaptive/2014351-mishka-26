@@ -9,7 +9,7 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="nojs">
@@ -38,7 +38,7 @@
           <li class="nav__item">
             <a class="nav__link nav__link--search" href="#">
               <svg width="18" height="18" role="img" aria-label="Поиск." fill="currentColor">
-                <use xlink:href="img/sprite.svg#search-icon"></use>
+                <use xlink:href="img/sprite.svg#icon-search"></use>
               </svg>
               <span>Поиск по сайту</span>
             </a>
@@ -46,7 +46,7 @@
           <li class="nav__item">
             <a class="nav__link nav__link--cart" href="#">
               <svg width="21" height="18" role="img" aria-label="Корзина.">
-                <use xlink:href="img/sprite.svg#cart-icon"></use>
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
               </svg>
               <span>Корзина: пока пуста</span>
             </a>
@@ -73,14 +73,14 @@
         <h2 class="first-screen__title first-screen__title--home title">Милые штуки ручной работы&nbsp;для&nbsp;дома</h2>
         <div class="first-screen__buttons">
           <a class="first-screen__buttons-item first-screen__buttons-item--interior" href="#">Предметы<br>интерьера
-            <!-- <svg width="40" height="62" role="img" aria-label="Предметы интерьера.">
+            <svg width="40" height="62" role="img" aria-label="Предметы интерьера.">
               <use xlink:href="img/sprite.svg#icon-interior"></use>
-            </svg> -->
+            </svg>
           </a>
           <a class="first-screen__buttons-item first-screen__buttons-item--toys" href="#">Детские<br>игрушки
-            <!-- <svg width="60" height="60" role="img" aria-label="Детские игрушки.">
+            <svg width="60" height="60" role="img" aria-label="Детские игрушки.">
               <use xlink:href="img/sprite.svg#icon-toys"></use>
-            </svg> -->
+            </svg>
           </a>
         </div>
       </div>
@@ -159,9 +159,15 @@
         <div class="reviews__control">
           <button class="reviews__control-arrow reviews__control-arrow--prev" type="button">
             <span class="visually-hidden">Назад</span>
+            <svg width="50" height="26" role="img" aria-label="Назад" fill="currentColor">
+              <use xlink:href="img/sprite.svg#icon-arrow"></use>
+            </svg>
           </button>
           <button class="reviews__control-arrow reviews__control-arrow--next" type="button">
             <span class="visually-hidden">Вперед</span>
+            <svg width="50" height="26" role="img" aria-label="Вперед">
+              <use xlink:href="img/sprite.svg#icon-arrow"></use>
+            </svg>
           </button>
         </div>
         <a class="reviews__button button" href="#">Написать</a>
@@ -197,6 +203,7 @@
     <div class="footer__wrapper container">
       <a class="footer__logo" href="index.html">
         <svg width="102" height="34" role="img" aria-label="Переход на главную страницу.">
+<!--          ) экспортировать картинку -->
           <use xlink:href="img/sprite.svg#logo-footer"></use>
         </svg>
       </a>
@@ -205,7 +212,7 @@
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
             <svg width="28" height="22" role="img" aria-label="Мы в контакте.">
-              <use xlink:href="img/sprite.svg#vkontakte"></use>
+              <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
             </svg>
             <span class="visually-hidden">Мы в контакте</span>
           </a>
@@ -213,7 +220,7 @@
         <li class="social__item">
           <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
             <svg width="28" height="22" role="img" aria-label="Мы на YouTube.">
-              <use xlink:href="img/sprite.svg#youtube"></use>
+              <use xlink:href="img/sprite.svg#icon-youtube"></use>
             </svg>
             <span class="visually-hidden">Мы на YouTube</span>
           </a>
@@ -221,7 +228,7 @@
         <li class="social__item">
           <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
             <svg width="28" height="22" role="img" aria-label="Мы в Телеграм.">
-              <use xlink:href="img/sprite.svg#telegram"></use>
+              <use xlink:href="img/sprite.svg#icon-telegram"></use>
             </svg>
             <span class="visually-hidden">Мы в Телеграм</span>
           </a>
@@ -232,13 +239,32 @@
         <span class="copyright__text">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg width="27" height="34" role="img" aria-label="Логотип HTML Academy.">
-            <use xlink:href="img/sprite.svg#htmlacademy-footer"></use>
+            <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
           </svg>
           <span class="visually-hidden">Html Academy</span>
         </a>
       </div>
     </div>
   </footer>
+  <div class="modal-container">
+    <section class="modal">
+      <h2 class="title modal__title">Добавить в&nbsp;корзину</h2>
+      <p class="modal__text">Выберите размер:</p>
+      <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+        <input class="visually-hidden" type="radio" name="size" value="S" id="input-s" checked>
+        <label class="modal__radio" for="input-s">s</label>
+
+        <input class="visually-hidden" type="radio" name="size" value="M" id="input-m" checked>
+        <label class="modal__radio" for="input-m">m</label>
+
+        <input class="visually-hidden" type="radio" name="size" value="L" id="input-l" checked>
+        <label class="modal__radio" for="input-l">l</label>
+
+        <button class="button modal__button" type="submit">Добавить</button>
+      </form>
+
+    </section>
+  </div>
   <script src="js/script.js"></script>
 </body>
 

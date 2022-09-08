@@ -22,6 +22,14 @@
   @media (min-width: $tablet-width) {
     display: block;
   }
+
+  &:hover svg {
+    fill: #46c1ae;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
 }
 
 .footer__copyright {
@@ -45,4 +53,16 @@
 
 .copyright__link {
   height: 34px;
+
+  &:hover svg {
+    fill: #46c1ae;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+}
+
+.copyright__link svg {
+  fill: #63d1bb;
 }

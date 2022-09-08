@@ -31,6 +31,14 @@
   }
 }
 
+.nav__logo:hover img {
+  opacity: 0.6;
+}
+
+.nav__logo:active img {
+  opacity: 0.3;
+}
+
 .nav__toggle {
   position: absolute;
   top: 18px;
@@ -198,7 +206,26 @@
 
   svg {
     position: absolute;
+    opacity: 0.2;
   }
+}
+
+.nav__link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.nav__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.nav__link:hover svg {
+  fill: #63d1bb;
+  opacity: 1;
+}
+
+.nav__link:active svg {
+  fill: #63d1bb;
+  opacity: 0.3;
 }
 
 .nav__link--form {
