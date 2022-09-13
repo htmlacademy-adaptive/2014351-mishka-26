@@ -113,6 +113,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0;
+    background-color: $footer-color;
   }
 }
 
@@ -123,7 +124,7 @@
       flex-wrap: wrap;
       grid-column: 1/-1;
       padding-left: 50px;
-      max-width: 80vw;
+      max-width: 60vw;
     }
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
