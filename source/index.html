@@ -5,11 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка</title>
+  <meta name="description" content="Интернет магазин вязаных изделий и игрушек Mishka.">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="../fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="../fonts/opensans.woff" as="font" crossorigin="anonymous">
 </head>
 
 <body class="nojs">
@@ -73,12 +76,12 @@
         <h2 class="first-screen__title first-screen__title--home title">Милые штуки ручной работы&nbsp;для&nbsp;дома</h2>
         <div class="first-screen__buttons">
           <a class="first-screen__buttons-item first-screen__buttons-item--interior" href="#">Предметы<br>интерьера
-            <svg width="40" height="62" role="img" aria-label="Предметы интерьера.">
+            <svg width="40" height="70" role="img" aria-label="Предметы интерьера.">
               <use xlink:href="img/sprite.svg#icon-interior"></use>
             </svg>
           </a>
           <a class="first-screen__buttons-item first-screen__buttons-item--toys" href="#">Детские<br>игрушки
-            <svg width="60" height="60" role="img" aria-label="Детские игрушки.">
+            <svg width="60" height="70" role="img" aria-label="Детские игрушки.">
               <use xlink:href="img/sprite.svg#icon-toys"></use>
             </svg>
           </a>
@@ -94,7 +97,7 @@
           <span class="promo__type">товар недели</span>
         </div>
         <div class="promo__description">
-          <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
+          <p>Экологически чистая пряжа, ручная&nbsp;работа. Доступны в шести расцветках и трёх размерах.</p>
           <dl class="promo__list list-reset">
             <dt class="promo__item">Цвет:</dt>
             <dd class="promo__item">тиффани/серый</dd>
@@ -106,7 +109,7 @@
         </div>
         <div class="promo__price-container">
           <p class="promo__price">Цена: 990 руб.</p>
-          <button class="button promo__button" type="button">Заказать</button>
+          <a class="button promo__button" href="form.html">Заказать</a>
         </div>
         <div class="promo__image">
           <picture>
@@ -126,12 +129,12 @@
       <div class="about__wrapper container">
         <h2 class="about__title title title--mini">Коротко о нас:</h2>
         <ul class="about__list list-reset">
-          <li class="about__item about__item--ecology">Экологически чистые материалы</li>
-          <li class="about__item about__item--scandinavia">Скандинавский стиль по российской цене</li>
-          <li class="about__item about__item--likes">Увеличивает лайки на фотографиях</li>
-          <li class="about__item about__item--hand">Связано вручную с любовью и умилением</li>
+          <li class="about__item about__item--ecology">Экологически чистые&nbsp;материалы</li>
+          <li class="about__item about__item--scandinavia">Скандинавский стиль по&nbsp;российской цене</li>
+          <li class="about__item about__item--likes">Увеличивает лайки на&nbsp;фотографиях</li>
+          <li class="about__item about__item--hand">Связано вручную с&nbsp;любовью&nbsp;и умилением</li>
           <li class="about__item about__item--support">Поддержка отечественного производителя</li>
-          <li class="about__item about__item--present">Поставляется в подарочной упаковке</li>
+          <li class="about__item about__item--present">Поставляется в&nbsp;подарочной&nbsp;упаковке</li>
         </ul>
       </div>
     </section>
@@ -141,12 +144,12 @@
         <h2 class="reviews__title title title--mini">Отзывы</h2>
         <ol class="reviews__list list-reset">
           <li class="reviews__item reviews__item--active">
-            <p class="reviews__desc">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <p class="reviews__desc">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
             <h3 class="reviews__name">Анастасия Красильникова</h3>
             <p class="reviews__email">@misssssiskras</p>
           </li>
           <li class="reviews__item">
-            <p class="reviews__desc">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <p class="reviews__desc">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
             <h3 class="reviews__name">Екатерина Красильникова</h3>
             <p class="reviews__email">@misssssiskras2</p>
           </li>
@@ -192,9 +195,15 @@
           <div class="contacts__iframe">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002699!2d30.320858715530907!3d59.93871916905485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1659355165573!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-          <figure class="contacts__map-image">
-            <img src="img/map-mobile@1x.png" alt="Карта с адресом" width="320" height="454">
-          </figure>
+          <picture class="contacts__map-image">
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.png 1x, img/map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.png 1x, img/map-tablet@2x.png 2x">
+            <img src="img/map-mobile@1x.png" srcset="img/map-mobile@1x.png 1x, img/map-mobile@2x.png 2x" width="320" height="454" alt="Карта с адресом.">
+          </picture>
         </div>
       </div>
     </section>
@@ -203,7 +212,6 @@
     <div class="footer__wrapper container">
       <a class="footer__logo" href="index.html">
         <svg width="102" height="34" role="img" aria-label="Переход на главную страницу.">
-<!--          ) экспортировать картинку -->
           <use xlink:href="img/sprite.svg#logo-footer"></use>
         </svg>
       </a>

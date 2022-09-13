@@ -1,5 +1,6 @@
 .social {
   display: flex;
+  flex-wrap: wrap;
   padding: 0 59px;
   justify-content: space-between;
   max-width: 300px;
@@ -17,14 +18,16 @@
   }
 }
 
-.social__link svg {
-  fill: #231f20;
-}
+.social__link {
+  svg {
+    fill: #231f20;
+  }
 
-.social__link:hover svg {
-  fill: #46c1ae;
-}
+  &:hover svg {
+    fill: #46c1ae;
+  }
 
-.social__link:active svg {
-  opacity: 0.3;
+  :active svg {
+    opacity: 0.3;
+  }
 }

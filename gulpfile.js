@@ -105,7 +105,7 @@ const clean = () => {
 };
 
 // Server
-const server = (done) => {
+export const server = (done) => {
   browser.init({
     server: {
       baseDir: 'build'

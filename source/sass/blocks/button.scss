@@ -2,6 +2,7 @@
   display: block;
   padding: 14px;
 
+  font-family: "Open Sans", "Geneva", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -18,17 +19,31 @@
   @media (min-width: $tablet-width) {
     font-size: 17px;
   }
-}
 
-.button:hover {
-  background-color: $base-color;
-  color: $another-title-color;
-}
+  &:hover {
+    background-color: $base-color;
+    color: $another-title-color;
+  }
 
-.button:active {
-  color: rgba(255, 255, 255, 0.3);
-}
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 
-.button:focus {
-  outline: 2px solid #63d1bb;
+  &:focus {
+    outline: 2px solid #63d1bb;
+  }
+
+  &:disabled {
+    background-color: #c7c7c7;
+    color: #ececec;
+    border-color: #c7c7c7;
+    pointer-events: none;
+  }
+
+  &--disabled {
+    background-color: #c7c7c7;
+    color: #ececec;
+    border-color: #c7c7c7;
+    pointer-events: none;
+  }
 }

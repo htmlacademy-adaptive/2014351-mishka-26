@@ -3,7 +3,7 @@
 }
 
 .footer__wrapper {
-  padding-top: 25px;
+  padding-top: 27px;
   padding-bottom: 31px;
   margin-top: auto;
 
@@ -33,8 +33,8 @@
 }
 
 .footer__copyright {
-  padding-top: 22px;
-  margin-top: 28px;
+  padding-top: 21px;
+  margin-top: 31px;
   border-top: 1px solid #e5e5e5;
   display: flex;
   align-items: center;
@@ -49,10 +49,18 @@
 
 .copyright__text {
   margin-right: 26px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 29px;
+  }
 }
 
 .copyright__link {
   height: 34px;
+
+  svg {
+    fill: #63d1bb;
+  }
 
   &:hover svg {
     fill: #46c1ae;
@@ -61,8 +69,4 @@
   &:active svg {
     opacity: 0.3;
   }
-}
-
-.copyright__link svg {
-  fill: #63d1bb;
 }
