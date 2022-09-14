@@ -75,14 +75,12 @@
       <div class="first-screen__container container">
         <h2 class="first-screen__title first-screen__title--home title">Милые штуки ручной работы&nbsp;для&nbsp;дома</h2>
         <div class="first-screen__buttons">
-          <a class="first-screen__buttons-item first-screen__buttons-item--interior" href="#">
-            <span>Предметы<br>интерьера</span>
+          <a class="first-screen__buttons-item first-screen__buttons-item--interior" href="#">Предметы<br>интерьера
             <svg width="40" height="70" role="img" aria-label="Предметы интерьера.">
               <use xlink:href="img/sprite.svg#icon-interior"></use>
             </svg>
           </a>
-          <a class="first-screen__buttons-item first-screen__buttons-item--toys" href="#">
-            <span>Детские<br>игрушки</span>
+          <a class="first-screen__buttons-item first-screen__buttons-item--toys" href="#">Детские<br>игрушки
             <svg width="60" height="70" role="img" aria-label="Детские игрушки.">
               <use xlink:href="img/sprite.svg#icon-toys"></use>
             </svg>
@@ -197,24 +195,22 @@
           <div class="contacts__iframe">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002699!2d30.320858715530907!3d59.93871916905485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1659355165573!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-          <div class="contacts__map-image">
-            <picture>
-              <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+          <picture class="contacts__map-image">
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.png 1x, img/map-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.png 1x, img/map-tablet@2x.png 2x">
-              <img src="img/map-mobile@1x.png" srcset="img/map-mobile@1x.png 1x, img/map-mobile@2x.png 2x" width="320" height="454" alt="Карта с адресом.">
-            </picture>
-          </div>
+            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.png 1x, img/map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.png 1x, img/map-tablet@2x.png 2x">
+            <img src="img/map-mobile@1x.png" srcset="img/map-mobile@1x.png 1x, img/map-mobile@2x.png 2x" width="320" height="454" alt="Карта с адресом.">
+          </picture>
         </div>
       </div>
     </section>
   </main>
   <footer class="footer">
     <div class="footer__wrapper container">
-      <a class="footer__logo">
+      <a class="footer__logo" href="index.html">
         <svg width="102" height="34" role="img" aria-label="Переход на главную страницу.">
           <use xlink:href="img/sprite.svg#logo-footer"></use>
         </svg>
@@ -247,9 +243,9 @@
         </li>
       </ul>
 
-      <div class="footer__copyright">
-        <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="footer__copyright-text">Разработано</span>
+      <div class="footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg width="27" height="34" role="img" aria-label="Логотип HTML Academy.">
             <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
           </svg>
@@ -277,7 +273,7 @@
 
     </section>
   </div>
-<!--  <script src="js/script.js"></script>-->
+  <script src="js/script.js"></script>
 </body>
 
 </html>
