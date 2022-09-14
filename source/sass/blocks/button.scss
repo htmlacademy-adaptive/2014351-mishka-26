@@ -2,10 +2,10 @@
   display: block;
   padding: 14px;
 
-  font-family: "Open Sans", "Geneva", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  font-family: "Open Sans", "Geneva", sans-serif;
   text-align: center;
   color: $base-color;
   text-transform: uppercase;
@@ -13,7 +13,6 @@
 
   background-color: $background-color;
   border: 2px $base-color solid;
-
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
@@ -21,8 +20,9 @@
   }
 
   &:hover {
-    background-color: $base-color;
     color: $another-title-color;
+
+    background-color: $base-color;
   }
 
   &:active {
@@ -30,20 +30,27 @@
   }
 
   &:focus {
+    color: $another-title-color;
+
+    background-color: $base-color;
     outline: 2px solid #63d1bb;
   }
 
   &:disabled {
-    background-color: #c7c7c7;
     color: #ececec;
+
+    background-color: #c7c7c7;
     border-color: #c7c7c7;
+
     pointer-events: none;
   }
 
   &--disabled {
-    background-color: #c7c7c7;
     color: #ececec;
+
+    background-color: #c7c7c7;
     border-color: #c7c7c7;
+
     pointer-events: none;
   }
 }

@@ -1,11 +1,15 @@
-.header--home {
-
-  .nav__sale-container {
-    background-color: #f9f9f9;
-  }
-
-  .nav__list-container {
+.header--home .nav__sale-container {
+  @media (min-width: $tablet-width) {
     background-color: #f9f9f9;
   }
 }
 
+.header--home .nav__list-container {
+  @media (min-width: $tablet-width) {
+    background-color: #f9f9f9;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #ffffff;
+  }
+}
