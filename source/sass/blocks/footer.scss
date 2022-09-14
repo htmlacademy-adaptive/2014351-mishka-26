@@ -3,9 +3,9 @@
 }
 
 .footer__wrapper {
-  padding-top: 25px;
-  padding-bottom: 31px;
   margin-top: auto;
+  padding-top: 27px;
+  padding-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -19,50 +19,77 @@
   display: none;
   height: 34px;
 
+  color: #000000;
+
   @media (min-width: $tablet-width) {
     display: block;
   }
 
-  &:hover svg {
-    fill: #46c1ae;
+  &:hover,
+  &:focus {
+    color: #46c1ae;
+
+    outline: none;
   }
 
-  &:active svg {
+  &:active {
     opacity: 0.3;
   }
+}
+
+.footer__logo svg {
+  fill: currentColor;
 }
 
 .footer__copyright {
-  padding-top: 22px;
-  margin-top: 28px;
+  margin-top: 31px;
+  padding-top: 21px;
+
+  text-align: center;
+
   border-top: 1px solid #e5e5e5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   @media (min-width: $tablet-width) {
-    border: none;
     margin-top: 0;
     padding-top: 0;
+
+    border: none;
   }
 }
 
-.copyright__text {
-  margin-right: 26px;
-}
+.footer__copyright-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.copyright__link {
-  height: 34px;
+  color: #63d1bb;
+  text-decoration: none;
 
-  &:hover svg {
-    fill: #46c1ae;
+  &:hover,
+  &:focus {
+    color: #46c1ae;
+
+    outline: none;
   }
 
-  &:active svg {
+  &:active {
     opacity: 0.3;
   }
 }
 
-.copyright__link svg {
-  fill: #63d1bb;
+.footer__copyright-link svg {
+  fill: currentColor;
+}
+
+.footer__copyright-text {
+  margin-right: 26px;
+
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 18px;
+  color: $title-color;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 26px;
+  }
 }

@@ -1,22 +1,13 @@
 .catalog-title {
+  margin: 0;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-
   color: $title-color;
-
-  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
   }
-}
-
-.catalog-title:hover {
-  opacity: 0.6;
-}
-
-.catalog-title:active {
-  opacity: 0.3;
 }

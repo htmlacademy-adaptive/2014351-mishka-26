@@ -1,9 +1,10 @@
 .video__wrapper {
   display: grid;
-  grid-template-columns: 1fr;
   max-width: 260px;
   margin: 0 auto;
   margin-bottom: 58px;
+
+  grid-template-columns: 1fr;
 
   @media (min-width: $tablet-width) {
     max-width: 668px;
@@ -11,9 +12,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: none;
+    margin-bottom: 102px;
+
     grid-template-columns: 682px 1fr;
     grid-template-rows: auto 1fr;
-    max-width: none;
   }
 
   &:hover {
@@ -36,6 +39,7 @@
 
 .video__image {
   position: relative;
+
   width: 100%;
   height: 150px;
 
@@ -48,20 +52,23 @@
 
     grid-row: 1 / span 2;
   }
+}
 
-  img {
-    width: 100%;
-    height: 100%;
-  }
+.video__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .video__text {
-  padding: 35px 32px 33px;
+  padding: 32px 32px 33px;
+
   border: $border-classic;
 
   @media (min-width: $tablet-width) {
+    padding: 0 40px 44px;
+
     border-top: none;
-    padding: 0 42px 46px 42px;
   }
 
   @media (min-width: $desktop-width) {
@@ -72,34 +79,39 @@
 
 .video__desc {
   margin: 0;
+
   font-size: 13px;
 
   @media (min-width: $tablet-width) {
-    line-height: 30px;
     font-size: 15px;
+    line-height: 30px;
   }
 }
 
 .video__title {
   order: -1;
-  padding: 22px 13px 27px 91px;
+  padding: 20px 13px 27px 91px;
+
   background-image: url("../img/svg/video.svg");
   background-repeat: no-repeat;
-  background-position: top 35px left 34px;
+  background-position: top 34px left 33px;
   border: $border-classic;
 
   @media (min-width: $tablet-width) {
     order: 0;
+    padding: 40px 107px 24px;
+
+    background-position: top 37px left 42px;
     border-bottom: none;
-    padding: 41px 107px 25px;
-    background-position: top 39px left 42px;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 96px 57px 26px 80px;
+
+    background-position: top 47px left 80px;
+
     grid-column: 2/3;
     grid-row: 1/2;
-    padding: 96px 57px 28px 80px;
-    background-position: top 47px left 80px;
   }
 }
 
@@ -108,24 +120,29 @@
   margin-top: 41px;
 
   @media (min-width: $desktop-width) {
-    margin-top: 49px;
+    margin-top: 53px;
   }
 }
 
-.video__play svg {
+.video__play {
   position: absolute;
   top: 0;
-  bottom: 0;
   right: 0;
+  bottom: 0;
   left: 0;
+
+  display: block;
+  width: 100px;
+  height: 77px;
   margin: auto;
-}
 
-.video__play:hover svg {
-  transform: scale(1.2);
-}
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
 
-.video__play:active svg {
-  transform: scale(0.8);
-  opacity: 0.7;
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.7;
+  }
 }

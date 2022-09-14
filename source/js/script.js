@@ -41,36 +41,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (modal) {
     document.addEventListener('click', function (evt) {
-      if (modal.classList.contains('modal--open') && !evt.target.classList.contains('modal') && !evt.target.classList.contains('promo__button')) {
-        let buttonsFound = false;
-        if (catalogButtons.length) {
-          buttonsFound = findInParent(evt.target, 'catalog__cart-button');
-        }
-
-        const isModalChildren = findInParent(evt.target, 'modal');
-        if (!isModalChildren && !buttonsFound) {
-          modal.classList.remove('modal--open');
-        }
+      if (modal.classList.contains('modal--open') && evt.target.classList.contains('modal-container')) {
+        modal.classList.remove('modal--open');
       }
     });
-  }
-
-  /**
-   * Ищет класс searchingClass у родителей элемента element
-   * возвращает true если элемент найден, иначе false
-   */
-  function findInParent(element, searchingClass) {
-    let target = element.parentElement;
-    let isFound = false;
-    while (target.tagName !== 'BODY') {
-      if (target.classList.contains(searchingClass)) {
-        isFound = true;
-        break;
-      }
-      target = target.parentElement;
-    }
-
-    return isFound;
   }
 
   const modalSubmit = document.querySelector('.modal__button');

@@ -12,6 +12,8 @@
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans.woff" as="font" crossorigin="anonymous">
 
 </head>
 
@@ -93,12 +95,12 @@
             </h2>
             <div class="form__input-wrapper">
               <label class="form__label">
-                <input class="visually-hidden form__input-control form__input--radio" type="radio" name="type" value="interior" checked>
+                <input class="visually-hidden form__input-control form__input-control--radio" type="radio" name="type" value="interior" checked>
                 <span class="form__label-control form__label-control--radio"></span>
                 <span class="form__label-text">Аксессуар для интерьера</span>
               </label>
               <label class="form__label">
-                <input class="visually-hidden form__input-control form__input--radio" type="radio" name="type" value="toy">
+                <input class="visually-hidden form__input-control form__input-control--radio" type="radio" name="type" value="toy">
                 <span class="form__label-control form__label-control--radio"></span>
                 <span class="form__label-text">Детская игрушка</span>
               </label>
@@ -113,32 +115,32 @@
             </h2>
             <div class="form__input-wrapper form__input-wrapper--check">
               <label class="form__label form__label--check">
-                <input class="visually-hidden form__input-control form__input--checkbox" type="checkbox" name="white" checked>
+                <input class="visually-hidden form__input-control form__input-control--checkbox" type="checkbox" name="white" checked>
                 <span class="form__label-control form__label-control--check"></span>
                 <span class="form__label-text">Белый</span>
               </label>
               <label class="form__label form__label--check">
-                <input class="visually-hidden form__input-control form__input--checkbox" type="checkbox" name="grey" checked>
+                <input class="visually-hidden form__input-control form__input-control--checkbox" type="checkbox" name="grey" checked>
                 <span class="form__label-control form__label-control--check"></span>
                 <span class="form__label-text">Серый</span>
               </label>
               <label class="form__label form__label--check">
-                <input class="visually-hidden form__input-control form__input--checkbox" type="checkbox" name="tiffany">
+                <input class="visually-hidden form__input-control form__input-control--checkbox" type="checkbox" name="tiffany">
                 <span class="form__label-control form__label-control--check"></span>
                 <span class="form__label-text">Тиффани</span>
               </label>
               <label class="form__label form__label--check">
-                <input class="visually-hidden form__input-control form__input--checkbox" type="checkbox" name="black">
+                <input class="visually-hidden form__input-control form__input-control--checkbox" type="checkbox" name="black">
                 <span class="form__label-control form__label-control--check"></span>
                 <span class="form__label-text">Черный</span>
               </label>
               <label class="form__label form__label--check">
-                <input class="visually-hidden form__input-control form__input--checkbox" type="checkbox" name="pink">
+                <input class="visually-hidden form__input-control form__input-control--checkbox" type="checkbox" name="pink">
                 <span class="form__label-control form__label-control--check"></span>
                 <span class="form__label-text">Розовый</span>
               </label>
               <label class="form__label form__label--check">
-                <input class="visually-hidden form__input-control form__input--checkbox" type="checkbox" name="orange">
+                <input class="visually-hidden form__input-control form__input-control--checkbox" type="checkbox" name="orange">
                 <span class="form__label-control form__label-control--check"></span>
                 <span class="form__label-text">Оранжевый</span>
               </label>
@@ -151,7 +153,7 @@
             <h2 class="form__section-name form__section-name--lines">
               <span>Фио</span>
             </h2>
-            <div class="form__input-wrapper">
+            <div class="form__input-wrapper form__input-wrapper--data">
               <div class="form__input-group">
                 <label class="form__label-text" for="form-name">Имя:</label>
                 <input class="form__input" id="form-name" type="text" placeholder="Введите ваше имя*">
@@ -181,7 +183,7 @@
               </svg>
             </label>
           </div>
-          <div class="form__container container">
+          <div class="form__container form__container--mail container">
             <h2 class="form__section-name form__section-name--lines">
               <span>E-mail</span>
             </h2>
@@ -200,7 +202,7 @@
             <h2 class="form__section-name form__section-name--lines">
               <span>Доп</span>
             </h2>
-            <textarea class="form__input form__input--textarea" name="comment" rows="7" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <textarea class="form__input form__input--textarea" name="comment" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
         </fieldset>
         <div class="form__section form__section--submit">
@@ -247,9 +249,9 @@
         </li>
       </ul>
 
-      <div class="footer__copyright copyright">
-        <span class="copyright__text">Разработано</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+      <div class="footer__copyright">
+        <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="footer__copyright-text">Разработано</span>
           <svg width="27" height="34" role="img" aria-label="Логотип HTML Academy.">
             <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
           </svg>

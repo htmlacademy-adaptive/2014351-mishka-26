@@ -1,14 +1,14 @@
 .about__wrapper {
   padding-top: 31px;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     padding-top: 56px;
+    padding-bottom: 28px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 225px;
-    padding-bottom: 56px;
+    padding: 67px 228px 32px 225px;
   }
 }
 
@@ -36,7 +36,11 @@
     line-height: 22px;
     max-width: 300px;
     margin-bottom: 54px;
-    padding-top: 57px;
+    padding-top: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 56px;
   }
 
   &--ecology {
@@ -62,6 +66,7 @@
   &--support {
     background-image: url("../img/svg/support.svg");
     background-position: top 4px left -2px;
+    overflow: visible;
   }
 
   &--present {
