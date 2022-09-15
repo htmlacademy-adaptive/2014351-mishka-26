@@ -115,7 +115,7 @@
   }
 }
 
-.video__button {
+.video__order-button {
   width: 100%;
   margin-top: 41px;
 
@@ -124,12 +124,14 @@
   }
 }
 
-.video__play {
+.video__play-button {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  border: none;
+  background-color: transparent;
 
   display: block;
   width: 100px;
