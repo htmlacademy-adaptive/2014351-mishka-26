@@ -376,14 +376,6 @@
   outline: 2px solid #62d1ba;
 }
 
-.form__input-control:disabled ~ span {
-  color: #c7c7c7;
-
-  border-color: #c7c7c7;
-
-  pointer-events: none;
-}
-
 .form__input-control:checked + .form__label-control--radio::before {
   content: "";
   position: absolute;
@@ -406,21 +398,48 @@
   }
 }
 
-.form__input-control:checked + .form__label-control--check::before {
-  content: url("../img/svg/check.svg");
+.form__input-control:checked + .form__label-control--check::before,
+.form__input-control:checked + .form__label-control--check::after {
+  content: "";
+  background-color: #000000;
   position: absolute;
-  top: 8px;
-  left: 5px;
-
-  display: block;
-  width: 23px;
-  height: 16px;
+  top: 7px;
+  left: 20px;
+  width: 2px;
+  height: 22px;
+  transform: rotate(45deg);
 
   @media (min-width: $tablet-width) {
-    top: 14px;
-    left: 8px;
+    height: 30px;
+    top: 11px;
+    left: 27px;
+  }
+}
 
-    width: 32px;
+.form__input-control:checked + .form__label-control--check::after {
+  height: 10px;
+  transform: rotate(-45deg);
+  top: 16px;
+  left: 9px;
+
+  @media (min-width: $tablet-width) {
+    height: 15px;
+    top: 23px;
+    left: 12px;
+  }
+}
+
+.form__input-control:disabled ~ span,
+.form__input-control:disabled + .form__label-control {
+  color: #c7c7c7;
+
+  border-color: #c7c7c7;
+
+  pointer-events: none;
+
+  &::before,
+  &::after {
+    background-color: #c7c7c7;
   }
 }
 
