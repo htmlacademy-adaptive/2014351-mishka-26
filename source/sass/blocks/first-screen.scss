@@ -182,14 +182,18 @@
 .first-screen__buttons-item svg {
   position: absolute;
   right: 36px;
-  bottom: 20px;
+  bottom: 11px;
 
   opacity: 0.5;
 
   fill: #149080;
 
   @media (min-width: $tablet-width) {
-    bottom: 39px;
+    bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 20px;
   }
 }
 
